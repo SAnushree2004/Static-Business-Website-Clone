@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Jost,sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content li, .nav li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    /* position: sticky;
+    top: 0; */
+    display: flex;
+    margin: 3%;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 20px;
+}
+
+.nav ul{
+    margin-left: 55%;
+}
+
+.content{
+    margin: 10% 30%;
+}
+
+.content li{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 30px 20px;
+}
+
+.content li:hover, .nav li:hover{
+    background-color: rgb(15, 15, 255);
+}
+
+.drpbtn{
+    border: none;
+    background-color: #ffff0000;
+    color: #f1f1f1;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.drp-content{
+    margin-top: 31px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.drp-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.drp-content a:hover {
+    color:rgb(15, 15, 255);
+}
+  
+.dropdown:hover .drp-content {
+    display: block;
+  }
+
+.main2{
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.main2 .m2lft{
+    width: 50%;
+    height: 100%;
+}
+
+.m2rt{
+    width: 50%;
+    height: 100%;
+}
+
+.m2rt .imageslider{
+    margin: 20% 0 0 12%;
+}
+
+.m2lftcontainer{
+    margin: 20% 10% 0 25%;
+}
+
+.m2lftcontainer h1{
+    font-weight: 1000;
+}
+
+.m2lfthd{
+    display: flex;
+}
+
+.m2lfthd p{
+    padding: 30px 0px;
+    letter-spacing: 1px; 
+    line-height: 25px; 
+    color:rgb(60, 60, 60);
+}
+
+.m2lft input[type="submit"]{
+    padding: 15px 35px;
+    margin: 20px 0px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(75, 75, 255);
+    color: white;
+}
+
+.alignlist{
+    display: flex;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 20% 0 0 18%;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    /* animation-name: fade; */
+    animation-duration: 3s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* -------------------------------------------------------------------------------------------------- */
+
+.main3{
+    width: 100%;
+    height: 80%;
+}
+
+.m3head{
+    text-align: center;
+    padding-bottom:30px;
+    height: 15%;
+}
+
+.m3body{
+    width: 100%;
+    height: 80%;
+}
+
+.inline{
+    display: inline;
+    margin: 0;
+    font-weight: 800;
+}
+.m3body .box{
+    display: flex;
+    padding: 25px;
+    width: 350px;
+    height: 170px;
+    box-shadow: 2px 2px 2px 2px rgb(165, 165, 165);
+}
+
+.uprbox{
+    display: flex;
+    margin: 50px 0px 0 200px;
+}
+
+.lwrbox{
+    display: flex;
+    margin: 10px 0px 0 200px;
+}
+
+
+.box{
+    margin: 15px;
+}
+
+.main4{
+    width: 100%;
+    height: 120%;
+}
+
+.mhead{
+    text-align: center;
+    padding: 3%;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    width: 500px;
+    margin-left: 33%;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    /* background-color: inherit; */
+    margin: 4px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 25px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgb(233, 233, 233);
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover, .tab button.active {
+    background-color: blue;
+    color: white;
+  }
+  
+  
+  /*Style the tab content*/
+  .tabcontent {
+    background-color: aquamarine;
+    display: none;
+    /* padding: 6px 12px; */
+    border: 1px solid #ccc;
+    border-top: none;
+  } 
+
+.uprall, .lwrall{
+    display: flex;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+.main5{
+    width: 100%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+
+.m5box{
+    width: 270px;
+    height: 360px;
+    box-shadow: 2px 2px 2px rgb(197, 194, 194);
+    /* background-color: aqua; */
+    margin: 20px;
+}
+
+.m5box h4{
+    text-align: center;
+}
+
+.icons{
+    margin-left: 82px;
+    padding: 5px;
+}
+
+.m5body{
+    display: flex;
+    margin-left: 130px;
+}
+
+.main6{
+    padding-top: 100px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .image {
+    width: 100%;
+    height: 330px;
+    display: block;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.6); /* Grey color with 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevents overlay from interfering with mouse events */
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 80px;
+}
+
+.m7body{
+    display: flex;
+    margin-left: 230px;
+    margin-bottom: 200px;
+}
+
+.m7box{
+    margin: 15px;
+    width: 330px;
+    height: 490px;
+    /* background-color: aqua; */
+    text-align: center;
+    color: #3d3d3d;
+    box-shadow: 2px 2px 2px 2px rgb(194, 188, 188);
+}
+
+.price{
+    display: flex;
+    margin: 10px 0px 40px 90px;
+}
+
+.price p{
+    padding-top: 30px;
+}
+
+.m7box p{
+    padding: 8px;
+}
+
+.button{
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 2px solid rgba(4, 0, 255, 0.5);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color: blue;
+    color: white;
+}

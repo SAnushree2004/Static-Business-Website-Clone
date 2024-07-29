@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIZNEX</title>
+    <link rel="stylesheet" href="business.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <img src="assets/office.jpg" alt="office" style="width: 100%; height: 100%;">
+        <div class="overlay">
+            <div class="nav">
+                <h2>BIZNEX</h2>
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <button class="drpbtn">INDEX</button>
+                            <div class="drp-content">
+                                <a href="#">Index 1</a>
+                                <a href="#">Index 2</a>
+                                <a href="#">Index 3</a>
+                                <a href="#">Index 4</a>
+                                <a href="#">Index 5</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="drpbtn">PORTFOLIO</button>
+                            <div class="drp-content">
+                                <a href="#">Portfolio 3 column</a>
+                                <a href="#">Portfolio 4 column</a>
+                                <a href="#">Portfolio detsils 1</a>
+                                <a href="#">Portfolio details 2</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="drpbtn">PAGES</button>
+                            <div class="drp-content">
+                                <a href="#">About Us</a>
+                                <a href="#">Services</a>
+                                <a href="#">Gallery</a>
+                                <a href="#">Team</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="drpbtn">SHOP</button>
+                            <div class="drp-content">
+                                <a href="#">Shop cart</a>
+                                <a href="#">Shop list</a>
+                                <a href="#">Shop checkout</a>
+                                <a href="#">Shop details</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="drpbtn">BLOG</button>
+                            <div class="drp-content">
+                                <a href="#">Classic</a>
+                                <a href="#">Column</a>
+                                <a href="#">Blog details</a>
+                                <a href="#">Shop details</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>CONTACT</li>
+                    <li><i class="ri-search-line"></i></li>
+                </ul>
+            </div>
+            <br>
+            <div class="content">
+                <h1 style="font-size: 50px;">GROW YOUR BUSINESS</h1>
+                <h3 style="font-size: 18px; padding: 30px;">This is business website template based on Bootstrap 4 framework.</h3>
+                <ul>
+                    <li>GET STARTED NOW</li>
+                    <li>FREE DOWNLOAD</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="m2lft">
+            <div class="m2lftcontainer">
+                <div class="m2lfthd">
+                    <h1 style="color: rgb(75, 75, 255);" >WHY&nbsp;</h1>
+                    <h1>CHOOSE US ?</h1>
+                </div>
+                <p style="padding: 30px 0px; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis</p>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <div class="alignlist">
+                            <img src="assets/growth.png" width="30px" height="30px">
+                            <p style="padding: 5px; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Deep Customisation Process</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="alignlist">
+                            <img src="assets/industry.png" width="30px" height="30px">
+                            <p style="padding: 5px; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Industry Specialisation</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="alignlist">
+                            <img src="assets/settings .png" width="30px" height="30px">
+                            <p style="padding: 5px; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Unique Sales Methologies</p>
+                        </div>
+                    </li>
+                </ul>
+                <input type="submit" value="READ MORE">
+            </div>
+        </div>
+        <div class="m2rt">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="assets/computer.jpg" style="width:500px; height: 300px;">
+                </div>
+                
+                <div class="mySlides fade">   
+                  <img src="assets/comp2.jpg" style="width:500px; height: 300px;">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/comp3.jpg" style="width:500px; height: 300px;">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000); // Change image every 2 seconds
+                }
+                </script>
+        </div>
+    </div>
+    <div class="main3">
+        <div class="m3head">
+            <h1 class="inline" style="color: rgb(75, 75, 255);">OUR</h1>
+            <h1 class="inline">SERVICES</h1><br><br>
+            <h3 style="font-size: medium;">Explore some of the best business from around the world from our partners and friends.</h3>
+        </div>
+        <div class="m3body">
+            <div class="uprbox">
+                <div class="box">
+                    <img src="assets/growth.png" width="60px" height="60px" style="padding-right: 3px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/card.png" width="40px" height="40px" style="padding-right: 5px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/plaingrowth.png" width="40px" height="40px" style="padding-right: 5px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lwrbox">
+                <div class="box">
+                    <img src="assets/owl.png" width="40px" height="40px" style="padding-right: 5px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/roundlogo.png" width="40px" height="40px" style="padding-right: 5px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="assets/cart.png" width="40px" height="40px" style="padding-right: 5px;">
+                    <div class="box-content">
+                        <h3 style="font-size: medium;">Consultative Training</h3><br>
+                        <p style="font-size: small; letter-spacing: 1px; line-height: 25px; color: rgb(60, 60, 60);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main4">
+        <div class="mhead">
+            <h1 class="inline" style="color: rgb(75, 75, 255);">OUR</h1>
+            <h1 class="inline">PORTFOLIO</h1><br><br>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'All')" id="defaultOpen">All</button>
+                <button class="tablinks" onclick="openCity(event, 'Web')">Web</button>
+                <button class="tablinks" onclick="openCity(event, 'Graphic')">Graphic</button>
+                <button class="tablinks" onclick="openCity(event, 'Wordpress')">Word Press</button>
+            </div>
+        </div>
+        <div id="All" class="tabcontent">
+            <div class="uprall">
+                <img src="assets/img-1.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-2.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-3.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-4.jpg" alt="img" width="380px" height="300px">
+            </div>
+            <div class="lwrall">
+                <img src="assets/img-5.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-6.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-7.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-8.jpg" alt="img" width="380px" height="300px">
+            </div>
+        </div>
+        <div id="Web" class="tabcontent">
+            <div class="uprall">
+                <img src="assets/img-8.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-2.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-3.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-4.jpg" alt="img" width="380px" height="300px">
+            </div>
+            <div class="lwrall">
+                <img src="assets/img-5.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-6.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-7.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-8.jpg" alt="img" width="380px" height="300px">
+            </div>
+        </div>
+        <div id="Graphic" class="tabcontent">
+            <div class="uprall">
+                <img src="assets/img-7.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-2.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-3.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-4.jpg" alt="img" width="380px" height="300px">
+            </div>
+            <div class="lwrall">
+                <img src="assets/img-5.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-6.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-7.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-8.jpg" alt="img" width="380px" height="300px">
+            </div>
+        </div>
+        <div id="Wordpress" class="tabcontent">
+            <div class="uprall">
+                <img src="assets/img-6.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-2.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-3.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-4.jpg" alt="img" width="380px" height="300px">
+            </div>
+            <div class="lwrall">
+                <img src="assets/img-5.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-6.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-7.jpg" alt="img" width="380px" height="300px">
+                <img src="assets/img-8.jpg" alt="img" width="380px" height="300px">
+            </div>
+        </div>
+        <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+    </div>
+    <div class="main5">
+        <div class="mhead">
+            <h1 class="inline" style="color: rgb(75, 75, 255);">OUR</h1>
+            <h1 class="inline">TEAM</h1><br><br>
+            <P>Meet out small team that make those great products.</P>
+        </div>
+        <div class="m5body">
+            <div class="m5box">
+                <img src="assets/avatar-1.jpg" alt="avatar-1" width="270px" width="250px">
+                <h4 style="padding-top: 25px;">Martin Smith</h4>
+                <h4 style="font-weight: 300; padding: 10px;">Web Developer</h4>
+                <div class="icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+            <div class="m5box">
+                <img src="assets/avatar-6.jpg" alt="avatar-1" width="270px" width="250px">
+                <h4 style="padding-top: 25px;">John Pitarshon</h4>
+                <h4 style="font-weight: 300; padding: 10px;">Creative Director</h4>
+                <div class="icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+            <div class="m5box">
+                <img src="assets/avatar-7.jpg" alt="avatar-1" width="270px" width="250px">
+                <h4 style="padding-top: 25px;">Maria Blank</h4>
+                <h4 style="font-weight: 300; padding: 10px;">Office Manager</h4>
+                <div class="icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+            <div class="m5box">
+                <img src="assets/avatar-8.jpg" alt="avatar-1" width="270px" width="250px">
+                <h4 style="padding-top: 25px;">Karen Paran</h4>
+                <h4 style="font-weight: 300; padding: 10px;">Support Manager</h4>
+                <div class="icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main6">
+        <div class="container">
+            <img src="assets/officegirl2.jpg" alt="Image" class="image">
+            <div class="overlay2">
+                <div class="text">
+                    <img src="assets/cup-removebg-preview.png" alt="cup" width="50px" height="50px">
+                    <h1 style="color: rgb(94, 94, 252);">967</h1><br>
+                    <h3>AWARDS</h3>
+                </div>
+                <div class="text">
+                    <img src="assets/man-removebg-preview.png" alt="cup" width="50px" height="50px">
+                    <h1 style="color: rgb(94, 94, 252);">967</h1><br>
+                    <h3>AWARDS</h3>
+                </div>
+                <div class="text">
+                    <img src="assets/man2-removebg-preview.png" alt="cup" width="50px" height="50px">
+                    <h1 style="color: rgb(94, 94, 252);">967</h1><br>
+                    <h3>AWARDS</h3>
+                </div>
+                <div class="text">
+                    <img src="assets/work-removebg-preview.png" alt="cup" width="50px" height="50px">
+                    <h1 style="color: rgb(94, 94, 252);">967</h1><br>
+                    <h3>AWARDS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main7">
+        <div class="mhead">
+            <h1 class="inline" style="color: rgb(75, 75, 255);">OUR</h1>
+            <h1 class="inline">PRICING</h1><br><br>
+            <P>Finding your perfect plan for your business.</P>
+        </div>
+        <div class="m7body">
+            <div class="m7box">
+                <h3 style="padding: 30px;">Basic Plan</h3>
+                <div class="price">
+                    <h4>$&nbsp;</h4>
+                    <h1 style="color: blue; font-size: 40pt;">54&nbsp;</h1>
+                    <p id='pm'>per month</p>
+                </div>
+                <p>20 Projects</p>
+                <p>32GB Storage</p>
+                <p>50 Email Accounts</p>
+                <p>12GB Bandwidth</p>
+                <p>32GB Storage</p>
+                <br>
+                <br>
+                <hr>
+                <div class="button">Get Started</div>
+            </div>
+            <div class="m7box">
+                <h3 style="padding: 30px;">Basic Plan</h3>
+                <div class="price">
+                    <h4>$&nbsp;</h4>
+                    <h1 style="color: blue; font-size: 40pt;">54&nbsp;</h1>
+                    <p id='pm'>per month</p>
+                </div>
+                <p>20 Projects</p>
+                <p>32GB Storage</p>
+                <p>50 Email Accounts</p>
+                <p>12GB Bandwidth</p>
+                <p>32GB Storage</p>
+                <br>
+                <br>
+                <hr>
+                <div class="button">Get Started</div>
+            </div>
+            <div class="m7box">
+                <h3 style="padding: 30px;">Basic Plan</h3>
+                <div class="price">
+                    <h4>$&nbsp;</h4>
+                    <h1 style="color: blue; font-size: 40pt;">54&nbsp;</h1>
+                    <p id='pm'>per month</p>
+                </div>
+                <p>20 Projects</p>
+                <p>32GB Storage</p>
+                <p>50 Email Accounts</p>
+                <p>12GB Bandwidth</p>
+                <p>32GB Storage</p>
+                <br>
+                <br>
+                <hr>
+                <div class="button">Get Started</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
